@@ -1,0 +1,56 @@
+/* 게시판 상세 - bn-view-common */
+.bn-view-common .b-main-box .b-top-box{display:flex;flex-direction:column;justify-content:space-between;padding:3.9rem 3.2rem;background:var(--color20);border-top:1px solid var(--color01);border-bottom:1px solid var(--color04);}
+.bn-view-common .b-main-box .b-top-box .b-num{font-size:1.8rem;line-height:2.6rem;}
+.bn-view-common .b-main-box .b-title-box{padding:0 0 2.4rem;}
+.bn-view-common .b-main-box .b-title-box .b-title{display:inline-block;font-size:2.4rem;line-height:3.2rem;font-weight:var(--font-weight-medium);word-wrap:break-word;vertical-align:middle;}
+
+.bn-view-common .b-main-box .b-title-box .b-new{margin:0 0 0 6px;width:2rem;height:2rem;background:var(--color22);color:var(--white100);font-size:1.2rem;font-weight:bold;display:inline-block;text-align:center;line-height:2rem;}
+.bn-view-common .b-etc-box{width:100%;}
+.bn-view-common .b-etc-box ul{display:flex;}
+.bn-view-common .b-etc-box ul li{position:relative;padding:0 3.2rem 0 0;font-size:1.6rem;line-height:2.4rem;color:var(--black06);}
+.bn-view-common .b-etc-box ul li:last-of-type{margin:0;padding:0;}
+.bn-view-common .b-etc-box ul li span{display:inline-block;}
+.bn-view-common .b-etc-box ul li span:nth-of-type(1){padding:0 8px 0 0;color:var(--color01);font-weight:var(--font-weight-medium);}
+.bn-view-common .b-info-box{padding:2rem 3.2rem;border-bottom:1px solid var(--color04);width:100%;box-sizing:border-box;}
+.bn-view-common .b-file-box ul li{padding:0 0 1.2rem;white-space:nowrap;}
+.bn-view-common .b-file-box ul li:last-of-type{padding:0;}
+.bn-view-common .b-file-box ul li .b-file-dwn{display:inline-block;padding:0 0 0 3.6rem;max-width:100%;background:url(../../../public/assets/images/common/ico-board-detail-file-down.svg) no-repeat left center/2.4rem;font-size:1.6rem;line-height:2.4rem;font-weight:var(--font-weight-medium);text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;box-sizing:border-box;vertical-align:middle;}
+.bn-view-common .b-file-box ul li span{display:inline-block;position:relative;margin:0 -4px 0 0;padding:0 0 0 5px;font-size:1.5rem;line-height:2.3rem;font-weight:var(--font-weight-light);vertical-align:middle;}
+
+.bn-view-common .b-content-box{padding:4rem 3.2rem;text-align:center;}
+.bn-view-common .b-content-box p,
+.bn-view-common .b-content-box pre{font-family:inherit;font-size:1.8rem;line-height:2.4rem;color:var(--color01);font-weight:var(--font-weight-medium);text-align:left;}
+.bn-view-common .b-content-box img{max-width:100%;}
+
+.bn-view-common .b-pager-box{padding:6.4rem 0 0 0;}
+.bn-view-common .b-pager-box div{display:flex;align-items:center;width:100%;border-bottom:1px solid var(--color04);table-layout:fixed;}
+.bn-view-common .b-pager-box div:nth-of-type(1){border-top:1px solid var(--color01);}
+.bn-view-common .b-pager-box div p{height:100%;color:var(--color01);font-weight:var(--font-weight-medium);box-sizing:border-box;}
+.bn-view-common .b-pager-box div p:nth-of-type(1){flex-shrink:0;padding:1.8rem 5rem;width:15rem;background:var(--color20);font-size:1.8rem;line-height:2.6rem;text-align:center;}
+.bn-view-common .b-pager-box div p:nth-of-type(2){padding:1.7rem 2rem;width:100%;font-size:2rem;line-height:2.8rem;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+
+
+@media screen and (max-width:1024.98px){
+	/* 게시판 상세 - bn-view-common */
+	.bn-view-common .b-main-box .b-top-box{padding:1.5rem 2rem;}
+	.bn-view-common .b-main-box .b-title-box{padding:0 0 1.6rem;}
+	.bn-view-common .b-main-box .b-title-box .b-title{font-size:1.8rem;line-height:2.4rem;}
+	.bn-view-common .b-main-box .b-title-box .b-notice{margin:0 6px 0 0;}
+	.bn-view-common .b-main-box .b-title-box .b-new{margin:0 0 0 6px;}
+	.bn-view-common .b-content-box{padding:2rem 0 3.2rem;}
+	.bn-view-common .b-content-box p{font-size:1.5rem;line-height:2.3rem;}
+	.bn-view-common .b-content-box iframe{padding:1.5rem 0;}
+	.bn-view-common .b-info-box{padding:0;}
+	.bn-view-common .b-etc-box ul{flex-wrap:wrap;margin:-2px -6px;}
+	.bn-view-common .b-etc-box ul li:nth-of-type(n){padding:2px 6px;font-size:1.4rem;}
+	.bn-view-common .b-etc-box ul li span:nth-of-type(1){padding:0 4px 0 0;}
+	.bn-view-common .b-file-box{padding:1rem 1.5rem;}
+	.bn-view-common .b-file-box ul li{padding:0 0 6px;}
+	.bn-view-common .b-file-box ul li a{background-size:1.8rem;font-size:1.4rem;line-height:2.2rem;}
+	.bn-view-common .b-file-box ul li .b-file-dwn{max-width:calc(100% - 2.5rem);padding:0 0 0 2rem;background-size:15px;}
+	.bn-view-common .b-file-box ul li .b-file-util{margin:0 0 0 5px;width:2rem;height:2rem;background-size:2rem;}
+	.bn-view-common .b-pager-box{padding:4rem 0 0;}
+	.bn-view-common .b-pager-box div p:nth-of-type(1){padding:1rem;width:8rem;font-size:1.6rem;line-height:2.4rem;}
+	.bn-view-common .b-pager-box div p:nth-of-type(2){padding:1rem;font-size:1.6rem;line-height:2.4rem;}
+	
+}
