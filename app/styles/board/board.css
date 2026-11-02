@@ -8,6 +8,14 @@
 .b-info-box .b-hit:before{content:'';position:relative;margin:0 8px 0 0;width:2.4rem;height:2.4rem;background:url(../../../public/assets/images/common/ico-view@2x.png) no-repeat center center/100%;}
 
 
+/* 작성 공통 */
+.b-input{display:inline-block;flex:1;padding:7px 1.2rem;width:100%;border:1px solid var(--color04);font-size:1.6rem;color:var(--color01);line-height:2.4rem;box-sizing:border-box;}
+.b-input::placeholder{color:var(--color04);}
+.b-input.datepicker{padding-right:3.6rem;background:url(../../../public/assets/images/common/ico-datepicker.svg) no-repeat right 1.2rem center/2.4rem;}
+.b-textarea{height:45rem;appearance:none;-webkit-appearance:none;-moz-appearance:none;resize:none;}
+.b-select{display:inline-block;flex:1;padding:8px 3.6rem 8px 1.2rem;width:100%;border:1px solid var(--color04);background:url(../../../public/assets/images/common/ico-board-write-select-arrow.svg) no-repeat right 1.2rem center/2.4rem;font-size:1.6rem;color:var(--color01);line-height:2.4rem;box-sizing:border-box;appearance:none;}
+
+
 /* 전체 선택/비선택 체크박스(관리자) */
 .b-top-info-wrap{position:relative;}
 .adm-chk{position:absolute;top:-6.4rem;}
@@ -17,6 +25,9 @@
 .article-chk{display:inline-block;position:absolute;top:0px;left:5px;line-height:1;z-index:5;}
 .article-chk input[type="checkbox"]{display:inline-block;margin:0;width:1.8rem;height:1.8rem;border:1px solid var(--color04);background:var(--white100);appearance:none;box-sizing:border-box;}
 .article-chk input[type="checkbox"]:checked{position:relative;border-color:var(--color04);background:var(--color14) url(../../../public/assets/images/common/ico-chk@2x.png) no-repeat center center/1.2rem;}
+
+input[type="checkbox"]{margin:0 1.2rem 0 0;width:1.8rem;height:1.8rem;border:1px solid var(--color04);background:var(--white100);appearance:none;box-sizing:border-box;}
+input[type="checkbox"]:checked{position:relative;border-color:var(--input-active-color);background:var(--color14) url(../../../public/assets/images/common/ico-chk@2x.png) no-repeat center center/1.5rem;}
 
 
 /* list 게시판 - colgroup 너비 지정 클래스 */
@@ -90,7 +101,7 @@
 .b-btn-wrap.right{justify-content:flex-end;}
 .b-btn-wrap.center{justify-content:center;}
 .b-btn-wrap .b-btn{display:block;padding:1.8rem 3.2rem;border-radius:0;box-sizing:border-box;border:1px solid var(--color01);background:var(--white100);font-size:1.8rem;color:var(--color01);line-height:2.6rem;text-align:center;}
-.b-btn-wrap .b-btn.blue{border-color:var(--color14);background:var(--color14);color:var(--white100);}
+.b-btn-wrap .b-btn.blue{border-color:var(--color09);background:var(--color09);color:var(--white100);}
 
 
 @media screen and (max-width:1024.98px){
@@ -98,6 +109,12 @@
 	/* 게시판 목록 공통 */
 	.b-info-box .b-hit:before{width:2rem;height:2rem;}
 
+	/* 작성 공통 */
+	.b-input{padding:6px 1rem;font-size:1.4rem;line-height:2rem;}
+	.b-input.datepicker{background-position:right 1rem center;background-size:2rem;}
+	.b-textarea{height:25rem;}
+	.b-select{padding:6px 2rem 6px 1rem;background-position:right 1rem center;background-size:2rem;font-size:1.4rem;line-height:2rem;}
+	
 	/* list 게시판 - colgroup 너비 지정 클래스 */
 	.bn-list-common table colgroup > [class*='b-col']{display:none;width:0;}
 	.bn-list-common table colgroup .b-col-auto{width:100%;}
@@ -109,6 +126,7 @@
 	.article-chk{left:-4px;}
 	.article-chk input[type="checkbox"]{width:1.4rem;height:1.4rem;}
 	.article-chk input[type="checkbox"]:checked:before{width:8px;height:8px;}
+	input[type="checkbox"]{width:1.4rem;height:1.4rem;}
 
 	/* 카테고리 */
     .b-category{padding:0 0 3rem;}

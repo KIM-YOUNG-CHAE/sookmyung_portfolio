@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* 게시판 작성 - bn-write-common */
+.bn-write-common fieldset{min-width:initial;letter-spacing:-0.025em;}
+.bn-write-common .b-table-outer{border-top:2px solid var(--color01);border-bottom:1px solid var(--color04);}
+.bn-write-common .b-table-box{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--color04)}
+.bn-write-common .b-table-box:last-of-type{border:none;}
+.bn-write-common .b-table-box .b-row-box{display:flex;flex:1;}
+.bn-write-common .b-table-box .b-row-box > div{display:flex;}
+.bn-write-common .b-table-box .b-row-box .b-title-box{display:flex;justify-content:center;align-items:center;padding:1.9rem 1rem;width:15rem;background-color:var(--color20);box-sizing:border-box;}
+.bn-write-common .b-table-box .b-row-box .b-title-box label,
+.bn-write-common .b-table-box .b-row-box .b-title-box p{font-size:1.8rem;font-weight:var(--font-weight-medium);color:var(--color01);line-height:2.6rem;}
+.bn-write-common .b-table-box .b-row-box .b-title-box .b-wr-required{display:inline-block;padding:0 0 0 4px;font-size:1.8rem;font-weight:var(--font-weight-medium);color:var(--color21);line-height:2.6rem;}
+.bn-write-common .b-table-box .b-row-box .b-con-box{display:flex;align-content:center;flex-wrap:wrap;width:calc(100% - 15rem);}
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-con{display:flex;align-items:center;gap:1.2rem;padding:1.2rem 2rem;width:100%;}
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-chk-box{display:flex;align-items:center;gap:1rem;}
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-chk-box input{margin:2px 0 0;}
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-chk-box label{font-size:1.6rem;line-height:2.2rem}
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-file-btn{display:flex;align-items:center;justify-content:center;width:10.8rem;height:100%;background-color:var(--color09);transition:0.3s ease;}
+
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-file-btn span{font-size:1.6rem;color:var(--white100);line-height:2.4rem;}
+
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box{padding:0 2rem 1.2rem;width:100%;}
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul{display:flex;flex-wrap:wrap;gap:1rem;}
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul li{display:flex;align-items:center;gap:5px;width:100%;}
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul li:last-of-type{padding:0;}
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul li a{display:block;font-size:1.4rem;color:var(--color01);line-height:2rem;}
+
+.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box .b-file-del-btn{display:inline-block;padding:2px 1rem;border-radius:2.4rem;border:1px solid var(--color09);font-size:1.4rem;font-weight:var(--font-weight-medium);color:var(--color09);line-height:1;text-align:center;transition:0.3s ease;-webkit-appearance:none;-moz-appearance:none;appearance:none;box-sizing:border-box;}
+
+@media screen and (max-width:1024.98px){
+	/* 게시판 작성 - bn-write-common */
+
+	.bn-write-common .b-table-box .b-row-box{width:100%;}
+	.bn-write-common .b-table-box .b-row-box .b-title-box{padding:1rem;width:13rem;}
+	.bn-write-common .b-table-box .b-row-box .b-title-box label,
+	.bn-write-common .b-table-box .b-row-box .b-title-box p{font-size:1.4rem;line-height:2rem;}
+	.bn-write-common .b-table-box .b-row-box .b-title-box .b-wr-required{padding:0 0 0 3px;font-size:1.3rem;line-height:1.8rem;}
+    .bn-write-common .b-table-box .b-row-box .b-con-box{width:calc(100% - 13rem)}
+    .bn-write-common .b-table-box .b-row-box .b-con-box .b-con{flex-wrap:wrap;padding:1rem;width:100%;}
+	.bn-write-common .b-table-box .b-row-box .b-con-box .b-con.b-period-con{gap:5px;}
+    .bn-write-common .b-table-box .b-row-box .b-con-box .b-con.b-period-con > div{}
+    .bn-write-common .b-table-box .b-row-box .b-con-box .b-con.b-period-con > div:not(.b-chk-box){width:100%;}
+    .bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-file-btn{width:10rem;}
+	.bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-file-btn span{font-size:1.3rem;line-height:1.9rem;}
+	
+	.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box{padding:0 1rem 1rem;}
+	.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul{gap:5px;}
+	.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul li a{font-size:1.3rem;line-height:1.9rem;}
+	.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box .b-file-del-btn{padding:2px 8px;font-size:1.2rem;}
+	.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box .attach-data{padding:0 0 5px;}
+	
+}
+
+@media screen and (max-width:768px){
+	/* 일반 게시판 작성 - bn-write-common*/
+	.bn-write-common .b-table-box .b-row-box{flex-wrap:wrap;}
+	.bn-write-common .b-table-box .b-row-box .b-title-box{padding:1rem;width:100%;}
+	.bn-write-common .b-table-box .b-row-box .b-con-box{width:100%;}
+	
+}
