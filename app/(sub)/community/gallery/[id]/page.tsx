@@ -1,7 +1,15 @@
-export default function page() {
+import BoardDetail from "@/app/components/community/BoardDetail";
+
+interface GalleryDetailProps {
+    params: {
+        id: string;
+    };
+}
+
+export default function GalleryDetailPage({ params }: GalleryDetailProps) {
+    const {id} = params;
+
     return (
-        <div>
-            Enter
-        </div>
-    );
+        <BoardDetail id={id} />
+    )
 }

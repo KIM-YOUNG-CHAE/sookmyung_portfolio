@@ -59,6 +59,10 @@ export default function BoardDetail({ id }: BoardDetailProps) {
                         </div>
                     </div>
                     <div className="b-content-box">
+                        <div className="img-box mg-b30">
+                            <img src="/assets/images/common/img-board-view.png" alt="" />
+                        </div>
+                        
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere sed nunc sit amet finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam fringilla mi in ante posuere, sit amet tincidunt libero consequat. Donec ut felis non lorem cursus faucibus. Quisque iaculis ipsum enim, non auctor leo dignissim eu. Nunc imperdiet vehicula neque. Integer maximus sollicitudin viverra. Nullam ut lectus nec neque luctus posuere eget id risus. Duis varius sollicitudin leo. Maecenas auctor vehicula tristique. Nulla pulvinar turpis ac ligula tincidunt dapibus. Etiam augue metus, aliquam vulputate hendrerit ac, tempor ac ante. Curabitur pellentesque tellus nec velit convallis faucibus.
                         </p>
