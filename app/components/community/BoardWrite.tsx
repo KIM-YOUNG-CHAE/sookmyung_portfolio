@@ -134,7 +134,7 @@ interface BoardWriteProps {
 }
 
 export default function BoardWrite({ fields }: BoardWriteProps) {
-    
+
     const fieldComponentMap: { [key: string]: React.ReactNode } = {
         notice: <NoticeField key="notice" />,
         title: <TitleField key="title" />,
@@ -152,7 +152,6 @@ export default function BoardWrite({ fields }: BoardWriteProps) {
                     <legend className="hide">게시판 작성</legend>
                     <div className="b-table-outer">
                         <div className="b-table-wrap">
-                            
                             {fields.map((fieldName) => fieldComponentMap[fieldName])}
                         </div>
                     </div>
