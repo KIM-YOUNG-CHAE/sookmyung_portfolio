@@ -17,20 +17,38 @@
 .bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-chk-box input{margin:2px 0 0;}
 .bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-chk-box label{font-size:1.6rem;line-height:2.2rem}
 .bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-file-btn{display:flex;align-items:center;justify-content:center;width:10.8rem;height:100%;background-color:var(--color09);transition:0.3s ease;}
-
 .bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-file-btn span{font-size:1.6rem;color:var(--white100);line-height:2.4rem;}
-
 .bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box{padding:0 2rem 1.2rem;width:100%;}
 .bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul{display:flex;flex-wrap:wrap;gap:1rem;}
 .bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul li{display:flex;align-items:center;gap:5px;width:100%;}
 .bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul li:last-of-type{padding:0;}
 .bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul li a{display:block;font-size:1.4rem;color:var(--color01);line-height:2rem;}
-
 .bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box .b-file-del-btn{display:inline-block;padding:2px 1rem;border-radius:2.4rem;border:1px solid var(--color09);font-size:1.4rem;font-weight:var(--font-weight-medium);color:var(--color09);line-height:1;text-align:center;transition:0.3s ease;-webkit-appearance:none;-moz-appearance:none;appearance:none;box-sizing:border-box;}
+
+/* 학사일정 작성 - bn-write-schedule */
+.bn-write-schedule .b-wr-required{display:inline-block;padding:0 0 0 4px;font-size:1.8rem;font-weight:var(--font-weight-medium);color:var(--color21);line-height:2.6rem;}
+.bn-write-schedule .b-sche-year-box{display:flex;align-items:center;gap:2rem;margin:0 0 5.9rem;}
+.bn-write-schedule .b-sche-year-box .b-title-box{display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:1.9rem 1rem;width:15rem;background-color:var(--color20);box-sizing:border-box;}
+.bn-write-schedule .b-sche-year-box .b-title-box label{font-size:1.8rem;font-weight:var(--font-weight-medium);line-height:2.6rem;}
+.bn-write-schedule .b-sche-year-box .b-con-box .b-select{min-width:20rem;}
+.bn-write-schedule .b-sche-month-box{gap:2rem;margin:0 0 6.4rem;}
+.bn-write-schedule .b-sche-month-box:last-of-type{margin:0;}
+.bn-write-schedule .b-sche-month-box .b-month-title{padding:0 0 2rem;font-size:3.2rem;font-weight:var(--font-weight-bold);line-height:4.2rem;}
+.bn-write-schedule .b-sche-month-box > div{display:flex;align-items:center;margin:0 0 2rem;}
+.bn-write-schedule .b-sche-month-box > div .b-title-box{display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:1.9rem 1rem;width:15rem;background-color:var(--color20);box-sizing:border-box;}
+.bn-write-schedule .b-sche-month-box > div .b-title-box p{font-size:1.8rem;font-weight:var(--font-weight-medium);line-height:2.6rem;}
+.bn-write-schedule .b-sche-month-box > div .b-con-box{display:flex;align-items:center;gap:2rem;padding:0 2rem;width:calc(100% - 15rem);box-sizing:border-box;}
+.bn-write-schedule .b-sche-month-box > div .b-con-box div{max-width:20rem;width:100%;}
+.bn-write-schedule .b-sche-month-box > div .b-con-box div.b-detail-box{max-width:unset;width:100%;}
+.bn-write-schedule .b-sche-month-box > div .b-con-box .b-input{width:100%;}
+
+.bn-write-schedule .b-sche-month-box > div .b-con-box .b-sche-del{flex-shrink:0;width:3.2rem;height:3.2rem;background:url(../../../public/assets/images/common/ico-sche-del.svg) no-repeat center/100%;text-indent:-9999px;overflow:hidden;}
+.bn-write-schedule .b-sche-month-box .b-sche-btn-box{display:flex;justify-content:flex-end;align-items:center;gap:2rem;margin:2rem 0 0;}
+.bn-write-schedule .b-sche-month-box .b-sche-btn-box span{font-size:1.6rem;color:var(--black06);line-height:2.4rem;}
+.bn-write-schedule .b-sche-month-box .b-sche-btn-box .b-btn-add{padding:1.1rem 3.2rem;background-color:var(--color14);font-size:1.8rem;color:var(--white100);line-height:2.6rem;}
 
 @media screen and (max-width:1024.98px){
 	/* 게시판 작성 - bn-write-common */
-
 	.bn-write-common .b-table-box .b-row-box{width:100%;}
 	.bn-write-common .b-table-box .b-row-box .b-title-box{padding:1rem;width:13rem;}
 	.bn-write-common .b-table-box .b-row-box .b-title-box label,
@@ -39,17 +57,33 @@
     .bn-write-common .b-table-box .b-row-box .b-con-box{width:calc(100% - 13rem)}
     .bn-write-common .b-table-box .b-row-box .b-con-box .b-con{flex-wrap:wrap;padding:1rem;width:100%;}
 	.bn-write-common .b-table-box .b-row-box .b-con-box .b-con.b-period-con{gap:5px;}
-    .bn-write-common .b-table-box .b-row-box .b-con-box .b-con.b-period-con > div{}
     .bn-write-common .b-table-box .b-row-box .b-con-box .b-con.b-period-con > div:not(.b-chk-box){width:100%;}
     .bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-file-btn{width:10rem;}
 	.bn-write-common .b-table-box .b-row-box .b-con-box .b-con .b-file-btn span{font-size:1.3rem;line-height:1.9rem;}
-	
 	.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box{padding:0 1rem 1rem;}
 	.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul{gap:5px;}
 	.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box ul li a{font-size:1.3rem;line-height:1.9rem;}
 	.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box .b-file-del-btn{padding:2px 8px;font-size:1.2rem;}
 	.bn-write-common .b-table-box .b-row-box .b-con-box .b-file-box .attach-data{padding:0 0 5px;}
-	
+
+	/* 학사일정 작성 - bn-write-schedule */
+	.bn-write-schedule .b-wr-required{padding:0 0 0 3px;font-size:1.3rem;line-height:1.8rem;}
+	.bn-write-schedule .b-sche-year-box{flex-direction:column;align-items:flex-start;gap:1.5rem;margin:0 0 3.2rem;}
+	.bn-write-schedule .b-sche-year-box .b-title-box{padding:1rem;width:100%;}
+	.bn-write-schedule .b-sche-year-box .b-title-box label{font-size:1.6rem;line-height:2.4rem;}
+	.bn-write-schedule .b-sche-year-box .b-con-box{width:100%;}
+	.bn-write-schedule .b-sche-year-box .b-con-box .b-select{min-width:auto;width:100%;}
+	.bn-write-schedule .b-sche-month-box{gap:1.5;margin:0 0 3.2rem;}
+	.bn-write-schedule .b-sche-month-box .b-month-title{padding:0 0 1.5rem;font-size:2.6rem;line-height:3.6rem;}
+	.bn-write-schedule .b-sche-month-box > div{flex-direction:column;align-items:flex-start;gap:1.5rem;margin:0 0 1.5rem;}
+	.bn-write-schedule .b-sche-month-box > div .b-title-box{padding:1rem;width:100%;}
+	.bn-write-schedule .b-sche-month-box > div .b-title-box p{font-size:1.6rem;line-height:2.4rem;}
+	.bn-write-schedule .b-sche-month-box > div .b-con-box{gap:1rem;padding:0;width:100%;}
+	.bn-write-schedule .b-sche-month-box > div .b-con-box div{max-width:15rem;}
+	.bn-write-schedule .b-sche-month-box > div .b-con-box .b-sche-del{width:2.6rem;height:2.6rem;}
+	.bn-write-schedule .b-sche-month-box .b-sche-btn-box{flex-direction:row;gap:1.5rem;margin:1.5rem 0 0;}
+	.bn-write-schedule .b-sche-month-box .b-sche-btn-box span{font-size:1.4rem;line-height:2.2rem;}
+	.bn-write-schedule .b-sche-month-box .b-sche-btn-box .b-btn-add{flex-shrink:0;padding:1rem 1.5rem;font-size:1.4rem;line-height:2.2rem;}
 }
 
 @media screen and (max-width:768px){
@@ -57,5 +91,10 @@
 	.bn-write-common .b-table-box .b-row-box{flex-wrap:wrap;}
 	.bn-write-common .b-table-box .b-row-box .b-title-box{padding:1rem;width:100%;}
 	.bn-write-common .b-table-box .b-row-box .b-con-box{width:100%;}
-	
+
+	/* 학사일정 작성 - bn-write-schedule */
+	.bn-write-schedule .b-sche-month-box > div .b-con-box{flex-wrap:wrap;}
+	.bn-write-schedule .b-sche-month-box > div .b-con-box div{max-width:calc(50% - 1.5rem);}
+	.bn-write-schedule .b-sche-month-box > div .b-con-box div.b-detail-box{width:calc(100% - 3.6rem)}
+	.bn-write-schedule .b-sche-month-box > div .b-con-box .b-input{width:100%;}
 }
